@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <i class="fas fa-bars fa-lg" style="color: #311e7e; border: none;" 
+      id="toggler"></i>
+    <b>
+      <a class="navbar-brand m-2" href="index.html">
+        YouTuBy <span><img src="/img/youtubyB.png"/></span></a>
+      </a>
+    </b>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" tabindex="2">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="explore.html" tabindex="3">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1">Shorts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3">Subscriptions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3">Library</a>
+        </li>
+      </ul>            
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <div class="nav-item">
+      <a class="nav-link" href="#" tabindex="-1" data-toggle="modal" data-target="#loginModal"><b>Sign
+          In</b></a>
+    </div>
+
+  </nav>
+  <!--sidebar-->
+  <div class="row">
+    <div class="sidebar ">
+      <ul class="list-group navbar-nav m-auto">
+        <div>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" tabindex="2"><i class="fas fa-home ml-3"></i>&nbsp;Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="explore.html" tabindex="3"><i class="fa fa-safari ml-3" ></i>&nbsp;Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-free-code-camp ml-3" ></i>&nbsp;Shorts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3"> <i class="fa fa-share-square-o ml-3" ></i>&nbsp;Subscriptions</a>
+        </li>
+        <hr>
+        </div>
+
+        <div>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-book fa-fw ml-3"></i>&nbsp;Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3">
+            <i class="fa fa-history ml-3" ></i>&nbsp;History
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-clock-o ml-3"></i>&nbsp;Watch later</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-thumbs-o-up ml-3" ></i>&nbsp;Liked videos</a>
+        </li>
+        <hr>
+        </div>
+        <div>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-gamepad ml-3"></i>&nbsp;Gaming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-trophy ml-3" ></i>&nbsp;Sport</a>
+          </li>
+          <hr>
+          </div>
+        <div>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-cog ml-3" ></i>&nbsp;Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-question-circle ml-3" ></i>&nbsp;Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-clone ml-3"></i>&nbsp;Send feedback</a>
+        </li> 
+        <hr>  
+        </div>           
+      </ul>
+      <div class="creators text-center d-block"  >
+        <small>Jemai Sameh</small> <br/>
+        <small>Full Stack Developer</small><br/>
+        <small>© Septembre 2022 </small>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="col-auto">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-envelope-o fa-fw"></i></div>
+                </div>
+                <input type="text" class="form-control" id="Email" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-key fa-fw"></i></div>
+                </div>
+                <input type="text" class="form-control" id="Password" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="form-check m-3 mr-sm-4">
+              <input class="form-check-input" type="checkbox" id="RememberMe">
+              <label class="form-check-label" for="RememberMe">
+                Remember me
+              </label>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-success">Login</button>
+              <button type="button" class="btn btn-outline-success">Login with gmail</button>
+            </div>
+          </form>
+          <div>
+          </div>
+        </div>
+        <div class="footer text-center">
+          <hr class="col-7">
+
+          <p>Don't have an Account! <a href="signup.html">Create an account</a></p>
+          <p>Forgot your <a href="#">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/597cb1f685.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+    
+</body>
+</html>
