@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-  
+
+<body onload="selectSide()">
 
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <i class="fas fa-bars fa-lg" style="color: #311e7e; border: none;" 
-      id="toggler"></i>
-    <b>
-      <a class="navbar-brand m-2" href="index.html">
-        YouTuBy <span><img src="/img/youtubyB.png"/></span></a>
-      </a>
-    </b>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="navbar-brand">
+      <i class="fas fa-bars fa-lg" style="color: #311e7e; border: none;" id="toggler"></i>
+      <b>
+        <a class="navbar-brand" href="index.html">
+          <span><img src="/img/youtubyB.png" /></span> YouTuBy </a>
+        </a>
+      </b>
+    </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#" tabindex="2">Home</a>
+        <li class="nav-item " id="Home--navbar">
+          <a class="nav-link" href="index.html" tabindex="2">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="explore.html" tabindex="3">Explore</a>
+        <li class="nav-item " id="Explore--navbar">
+          <a class="nav-link" href="Explore.html" tabindex="3">Explore</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item " id="RecentlyUploaded-navbar">
+          <a class="nav-link" href="RecentlyUploaded.html" tabindex="3">Recently Uploaded</a>
+        </li>
+
+        <li class="nav-item ">
           <a class="nav-link" href="#" tabindex="-1">Shorts</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <a class="nav-link" href="#" tabindex="3">Subscriptions</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <a class="nav-link" href="#" tabindex="3">Library</a>
         </li>
-      </ul>            
+      </ul>
     </div>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search">
@@ -53,66 +60,70 @@
     <div class="sidebar ">
       <ul class="list-group navbar-nav m-auto">
         <div>
-        <li class="nav-item active">
-          <a class="nav-link" href="#" tabindex="2"><i class="fas fa-home ml-3"></i>&nbsp;Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="explore.html" tabindex="3"><i class="fa fa-safari ml-3" ></i>&nbsp;Explore</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-free-code-camp ml-3" ></i>&nbsp;Shorts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="3"> <i class="fa fa-share-square-o ml-3" ></i>&nbsp;Subscriptions</a>
-        </li>
-        <hr>
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html" tabindex="2"><i class="fas fa-home ml-3"></i>&nbsp;Home </a>
+          </li>
+          <li class="nav-item " id="Explore">
+            <a class="nav-link" href="Explore.html" tabindex="3"><i class="fa fa-safari ml-3"></i>&nbsp;Explore</a>
+          </li>
+          <li class="nav-item " id="RecentlyUploaded">
+            <a class="nav-link" href="RecentlyUploaded.html" tabindex="3"><i class="fa fa-cloud-upload ml-3"
+                aria-hidden="true"></i>&nbsp;Recently Uploaded</a>
+          </li>
+          <li class="nav-item " id="Shorts">
+            <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-free-code-camp ml-3"></i>&nbsp;Shorts</a>
+          </li>
+          <li class="nav-item Subscriptions">
+            <a class="nav-link" href="#" tabindex="3"> <i class="fa fa-share-square-o ml-3"></i>&nbsp;Subscriptions</a>
+          </li>
+          <hr>
         </div>
 
         <div>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-book fa-fw ml-3"></i>&nbsp;Library</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="3">
-            <i class="fa fa-history ml-3" ></i>&nbsp;History
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-clock-o ml-3"></i>&nbsp;Watch later</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-thumbs-o-up ml-3" ></i>&nbsp;Liked videos</a>
-        </li>
-        <hr>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-gamepad ml-3"></i>&nbsp;Gaming</a>
+          <li class="nav-item Library">
+            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-book fa-fw ml-3"></i>&nbsp;Library</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-trophy ml-3" ></i>&nbsp;Sport</a>
+          <li class="nav-item History">
+            <a class="nav-link" href="#" tabindex="3">
+              <i class="fa fa-history ml-3"></i>&nbsp;History
+            </a>
+          </li>
+          <li class="nav-item WatchLater">
+            <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-clock-o ml-3"></i>&nbsp;Watch Later</a>
+          </li>
+          <li class="nav-item LikedVideos">
+            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-thumbs-o-up ml-3"></i>&nbsp;Liked Videos</a>
           </li>
           <hr>
-          </div>
+        </div>
         <div>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-cog ml-3" ></i>&nbsp;Settings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="3"><i class="fa fa-question-circle ml-3" ></i>&nbsp;Help</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-clone ml-3"></i>&nbsp;Send feedback</a>
-        </li> 
-        <hr>  
-        </div>           
+          <li class="nav-item Gaming">
+            <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-gamepad ml-3"></i>&nbsp;Gaming</a>
+          </li>
+          <li class="nav-item Sport">
+            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-trophy ml-3"></i>&nbsp;Sport</a>
+          </li>
+          <hr>
+        </div>
+        <div>
+          <li class="nav-item Settings">
+            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-cog ml-3"></i>&nbsp;Settings</a>
+          </li>
+          <li class="nav-item Help">
+            <a class="nav-link" href="#" tabindex="3"><i class="fa fa-question-circle ml-3"></i>&nbsp;Help</a>
+          </li>
+          <li class="nav-item SendFeedback">
+            <a class="nav-link" href="#" tabindex="-1"><i class="fa fa-clone ml-3"></i>&nbsp;Send Feedback</a>
+          </li>
+          <hr>
+        </div>
       </ul>
-      <div class="creators text-center d-block"  >
-        <small>Jemai Sameh</small> <br/>
-        <small>Full Stack Developer</small><br/>
+      <div class="creators text-center d-block">
+        <small>Jemai Sameh</small> <br />
+        <small>Full Stack Developer</small><br />
         <small>© Septembre 2022 </small>
       </div>
-      
+
     </div>
   </div>
 
@@ -174,6 +185,17 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/index.js"></script>
-    
+
+  <script>
+    $(function selectSide() {
+      url = window.location.href.split('/');
+      item = url[url.length - 1];
+      ok = item.split('.')[0];
+      activeE = document.getElementById(ok);
+      activeE.classList.add('active');
+    });
+
+  </script>
 </body>
+
 </html>

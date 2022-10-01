@@ -11,19 +11,42 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/index.css">
   <style>
-    .Explore .card .card-horizontal .card-body p {
+    .RecentlyUploaded .card .card-horizontal .card-body p {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    .Explore .row {
+    .RecentlyUploaded .row {
       justify-content: space-around !important;
     }
 
-    .Explore .card-horizontal .card-text,
-    .Explore .card-horizontal .card-title {
+    .RecentlyUploaded .card-horizontal .card-text,
+    .RecentlyUploaded .card-horizontal .card-title {
       color: #a1f3b4;
+    }
+
+    .RecentlyUploaded .RecentlyUploaded-card {
+      display: flex;
+      margin-bottom: 50px;
+      /*justify-content: space-around !important
+    */
+    }
+
+    .RecentlyUploaded .RecentlyUploaded-card div {
+      width: 15rem;
+      border-radius: 5px;
+      margin: 9px;
+      padding: 3rem;
+      -moz-box-shadow: 8px 8px 12px #aaa;
+      -webkit-box-shadow: 8px 8px 12px #aaa;
+      box-shadow: 8px 8px 12px #a1f3b4;
+    }
+
+    .RecentlyUploaded .RecentlyUploaded-card div:hover {
+      -moz-box-shadow: 8px 8px 12px #aaa;
+      -webkit-box-shadow: 8px 8px 12px #aaa;
+      box-shadow: 8px 8px 12px #311e7e;
     }
   </style>
 
@@ -37,108 +60,28 @@
         <header></header>
 
         <!--content home-->
-        <div class="content Explore container">
-          <h4 class="py-5">Explore</h4>
+        <div class="content RecentlyUploaded container">
+          <h4 class="py-5">Recently Uploaded</h4>
 
-          <!--search-->
-          <div class="row search-header ">
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  About 800 results
-                </div>
-                <div class="col-6">
-                  <span class="float-right "><i class="fas fa-filter"></i> Filter</span>
-                </div>
-                <div class="row mx-auto ">
-
-                  <div class="col-md-6 col-lg-3">
-                    <div class="text-center">Download Date</div>
-                    <hr>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName">
-                      <span>last hour</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName">
-                      <span>Today</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName">
-                      <span>This week</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName">
-                      <span>This month</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName">
-                      <span>This year</span>
-                    </label>
-                  </div>
-
-                  <div class="col-md-6 col-lg-3">
-                    <div class="text-center">Type</div>
-                    <hr>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName2">
-                      <span>Video</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName2">
-                      <span>Channel</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName2">
-                      <span>Playlist</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName2">
-                      <span>Movie</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName2">
-                      <span>Show</span>
-                    </label>
-                  </div>
-
-                  <div class="col-md-6 col-lg-3">
-                    <div class="text-center">Sort by</div>
-                    <hr>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName3">
-                      <span>Relevancy</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName3">
-                      <span>Download Date</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName3">
-                      <span>Views</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName3">
-                      <span>Evaluation</span>
-                    </label>
-                  </div>
-                  <div class="col-md-6 col-lg-3">
-                    <div class="text-center">Duration</div>
-                    <hr>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName4">
-                      <span>short (less than 4 minutes)</span>
-                    </label>
-                    <label class="d-block mb-3">
-                      <input type="checkbox" name="CheckBoxInputName4">
-                      <span>short (less than 4 minutes)</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
+          <div class="row RecentlyUploaded-card">
+            <div class="text-center">
+              <b><i class="fa fa-fire" aria-hidden="true"></i>
+                Trending
+              </b>
+            </div>
+            <div class="text-center">
+              <b><i class="fa fa-music" aria-hidden="true"></i>
+                Music</b>
+            </div>
+            <div>
+              <b><i class="fa fa-gamepad" aria-hidden="true"></i>
+                Gaming</b>
+            </div>
+            <div class="text-center">
+              <b><i class="fa fa-trophy" aria-hidden="true"></i>
+                Sports</b>
             </div>
           </div>
-
           <div class="row ">
             <div class="col mb-3 col-sm-9">
               <div class="card">
@@ -303,6 +246,7 @@
     $(function () {
       $("header").load("sidebar.html");
     });
+
   </script>
 </body>
 
